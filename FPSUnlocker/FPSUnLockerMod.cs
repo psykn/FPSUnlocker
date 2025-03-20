@@ -45,7 +45,7 @@ namespace FPSUnlocker
                 if (fps < 1)
                 {
                     if (shouldLog) MelonLogger.LogWarning("FPS attempted to be set to less than 1: resetting to default value of 60.");
-                    fps = 60;
+                    fps = 999;
                 }
 
                 Application.targetFrameRate = fps;
